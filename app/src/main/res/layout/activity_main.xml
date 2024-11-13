@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/light_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Intensity: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/accel_data"
+        android:layout_below="@id/light_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acceleration (X, Y, Z): "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_below="@id/accel_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alerts:"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="16dp" />
+    
+    <Button
+        android:id="@+id/start_button"
+        android:layout_below="@id/alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Monitoring"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_below="@id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Monitoring"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
