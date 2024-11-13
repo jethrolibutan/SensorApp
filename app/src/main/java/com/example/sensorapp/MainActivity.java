@@ -95,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
     private void stopMonitoring() {
         sensorManager.unregisterListener(lightListener);
         sensorManager.unregisterListener(accelListener);
+
+        alertMessage.setText("");
     }
 
     @Override
